@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      display: flex;
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+      max-height: 425px;
+      overflow: hidden;
+    }
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pokemon</h1>
+  <!-- Complete the HTML here -->
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="https://cdn.shopify.com/s/files/1/1416/8662/products/Pokemon_the_first_movie_1999_original_film_art_1200x.jpg?v=1572208868" alt="Pokemon_the_first_movie_1999_original_film_art">
+        <h3>Pokemon The First Movie</h3>
+        <p>Ash, Misty, and Brock travel across the ocean to an island along with other Pokemon trainers to battle against a
+        power Pokemon Trainer.</p>
+      </div>
+      <div class="column">
+        <img src="https://i.ebayimg.com/images/g/q~AAAMXQq8BQ9G-F/s-l600.jpg" alt="Pokemon_the_movie_2000_original_film_art">
+        <h3>Pokemon The Movie 2000</h3>
+        <p>This time, Ash, Misty, and Tracey visit the Shamouti Islands who are having a festival to honor the three legendary birds Articuno, Zapdos, and Moltres. During this trip a Pokemon Collector tries to capture these birds to lure out the legendary Pokemon, Lugia.</p>
+      </div>
+      <div class="column">
+        <img src="https://i.ebayimg.com/images/g/wpQAAOSwFohhIoVX/s-l1600.png" alt="Pokemon_3_spell_of_the_unown_original_film_art">
+        <h3>Pokemon 3 Spell Of The Unown</h3>
+        <p>Ash, Misty, and Brock try to save Ash's mother from a lonely little girl whose father has disappeared.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
